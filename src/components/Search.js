@@ -1,8 +1,14 @@
-import {React, useState} from "react";
+import React, {useState} from "react";
 import "../styles/search.css";
+import getImages from "../requests/getImages";
 
-const Search = () => {
+const Search = ({setSearchResults}) => {
     const [value, setvalue] = useState();
+
+    const handleSubmit = async (event) =>{
+        event.preventDefault();
+        setSearchResults(await getImages(value));
+    };
 
     return(
     <>
@@ -17,7 +23,7 @@ const Search = () => {
         </button>
     </form>
     </>
-    )
+    );
 };
 
 
