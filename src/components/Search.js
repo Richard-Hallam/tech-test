@@ -18,8 +18,8 @@ const Search = ({setSearchResults}) => {
         type="text"
         onChange={(e) => setvalue(e.target.value)} 
         />
-        <button className="search-btn" type="submit">
-            Go!
+        <button className="search-btn" type="submit" onClick={handleSubmit}>
+            Search
         </button>
     </form>
     </>
