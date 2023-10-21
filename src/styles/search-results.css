@@ -1,7 +1,15 @@
 .card-image{
     margin: auto;
     row-gap: 10px;
-    width: 100px;
-    height: 100px;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
 
+.image-container{
+    align-self: center;
+    align-items: center;
+    display: flexbox;
+    flex-direction: column;
+    -ms-flex-align: center;
 }
